@@ -4,7 +4,7 @@ import { ThirdPageComponent } from './third-page/third-page.component';
 import { SecondPageComponent } from './second-page/second-page.component';
 import { FirstPageComponent } from './first-page/first-page.component';
 
-const routes: Routes = [
+export const ROUTES: Routes = [
   {
     path: 'first-page',
     component: FirstPageComponent
@@ -16,11 +16,15 @@ const routes: Routes = [
   {
     path: 'third-page',
     component: ThirdPageComponent
+  },
+  {
+    path: '',
+    component: FirstPageComponent
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(ROUTES)],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
