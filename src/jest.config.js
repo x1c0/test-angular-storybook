@@ -1,4 +1,5 @@
 module.exports = {
+  cache: false,
   preset: 'jest-preset-angular',
   globals: {
     '__TRANSFORM_HTML__': true
