@@ -1,4 +1,5 @@
 module.exports = {
+  preset: 'jest-preset-angular',
   globals: {
     '__TRANSFORM_HTML__': true
   },
@@ -15,8 +16,8 @@ module.exports = {
     'node',
     '.html'
   ],
-  preset: 'jest-preset-angular',
-  setupTestFrameworkScriptFile: '<rootDir>/setup-jest.ts',
+  setupTestFrameworkScriptFile: '<rootDir>/.jest/setup-jest.ts',
+  setupFiles: ['<rootDir>/.jest/setup-require-context.js'],
   transformIgnorePatterns: [
     'node_modules'
   ]
